@@ -209,6 +209,9 @@
 		$("#autobox").on("click", function() {
 			$("#bb").load('AutoBox.html');
 		});
+		$("#mthint").on("click", function() {
+			$("#bb").load('MthIntroduction.html');
+		});
 		
 	});
 </script>
@@ -399,27 +402,27 @@ body {
 					data-toggle="collapse"><b>Multi Threading</b></a>
 					<div class="container">
 					<div id="tb" class="collapse">
-						<span class="glyphicon glyphicon glyphicon-star"> <b>Introduction</b></span><br> 
+						<span class="glyphicon glyphicon glyphicon-star"> <b id="mthint">Introduction</b></span><br> 
 						<span class="glyphicon glyphicon glyphicon-star">
-							<b>How to Create a Thread</b>
+							<b id="crth">How to Create a Thread</b>
 						</span><br> <span class="glyphicon glyphicon glyphicon-star">
-							<b>Getting and Setting name Of Thread</b>
+							<b id="gtstnmth">Getting and Setting name Of Thread</b>
 						</span><br> <span class="glyphicon glyphicon glyphicon-star">
-							<b>Thread Priorities</b>
+							<b id="thp">Thread Priorities</b>
 						</span><br> <span class="glyphicon glyphicon glyphicon-star">
-							<b>Thread Prevent Method</b>
+							<b id="thpm">Thread Prevent Method</b>
 						</span><br>
 						 <span class="glyphicon glyphicon glyphicon-star">
-							<b>Synchronization</b>
+							<b id="synch">Synchronization</b>
 						</span><br>
 							 <span class="glyphicon glyphicon glyphicon-star">
-							<b>Inter Thread Communications</b>
+							<b id="inthcomm">Inter Thread Communications</b>
 						</span><br>
 						<span class="glyphicon glyphicon glyphicon-star">
-							<b>Deadlock</b>
+							<b id="deadlck">Deadlock</b>
 						</span><br>
 						<span class="glyphicon glyphicon glyphicon-star">
-							<b>Demon Thread</b>
+							<b id="dmnth">Demon Thread</b>
 						</span><br>
 					</div>
 				</div><br>
