@@ -186,5 +186,58 @@
 	                 t.start(); // IllegalThreadStateException
 	          
 	</textarea>
+	<h6>
+       <b style="color: green ">Define a Thread by implementing Runnable interface :</b>
+	</h6>
+	<ul>
+	  <li>We can define a Thread even by implementing Runnable interface directly . </li>
+	  <li>Runnable interface present in java.lang package and it contains only one method . </li>
+	</ul>
+	<img alt="" src="images/RunnableTh.PNG"><br>
+	<textarea rows="16" cols="60" style="color: blue;">
+	  Example: 
+	           public class MyRunnable implements Runnable { 
+	                  public void run(){ 
+	                     for(int i=0; i<10;i++){ 
+	                         System.out.println("Child Thread");
+	                     }
+	                  }
+	                  
+	                  public static void main(String[] args){ 
+	                     MyRunnable mr = new MyRunnable();
+	                     Thread th = new Thread(mr);
+	                     th.start();
+	                     for(int i=0;i<10;i++){ 
+	                       System.out.println("Main Thread");
+	                     }
+	                  }
+	           }
+	          
+	</textarea>
+	<ul>
+	  <li>We can not except exact output for the above program, but several possible outputs we can provide . </li>
+	</ul>
+	<h6>
+       <b style="color: green ">Recommended way to define a Thread :</b>
+	</h6>
+	<ul>
+	  <li>Among two ways of defining a Thread, implements Runnable approach is recommended to use .</li>
+	  <li>In the first approach, our base class always extending Thread class and hence there is no chance of extending any other class . So that we will miss inheritance benefits . </li>
+	  <li>But in case of second approach, while implementing Runnable interface, we can extend any other class and hence won't miss any inheritance benefits . </li>
+	  <li>Because of above reason implements Runnable approach is recommended to define a Thread . </li>
+	</ul>
+	<h6>
+       <b style="color: green ">Thread class constructor : </b>
+	</h6>
+	<ul>
+	  <li>Thread t = new Thread()</li>
+	  <li>Thread t = new Thread(Runnable r)</li>
+	  <li>Thread t = new Thread(String name)</li>
+	  <li>Thread t = new Thread(Runnable r, String name)</li>
+	  <li>Thread t = new Thread(ThreadGroup g, String name)</li>
+	  <li>Thread t = new Thread(ThreadGroup g, Runnable r)</li>
+	  <li>Thread t = new Thread(ThreadGroup g, Runnable r, String name)</li>
+	  <li>Thread t = new Thread(ThreadGroup g, Runnable r, String name, long stacksize)</li>
+	</ul>
 </body>
 </html>
