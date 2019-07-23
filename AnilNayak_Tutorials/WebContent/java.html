@@ -212,7 +212,27 @@
 		$("#mthint").on("click", function() {
 			$("#bb").load('MthIntroduction.html');
 		});
-		
+		$("#gtstnmth").on("click", function() {
+			$("#bb").load('GetSetThread.html');
+		});
+		$("#thp").on("click", function() {
+			$("#bb").load('ThreadPriorities.html');
+		});
+		$("#thpm").on("click", function() {
+			$("#bb").load('ThreadPrevent.html');
+		});
+		$("#synch").on("click", function() {
+			$("#bb").load('Synchronization.html');
+		});
+		$("#inthcomm").on("click", function() {
+			$("#bb").load('Interthread.html');
+		});
+		$("#deadlck").on("click", function() {
+			$("#bb").load('DeadLock.html');
+		});
+		$("#dmnth").on("click", function() {
+			$("#bb").load('DaemonThread.html');
+		});
 	});
 </script>
 <style type="text/css">
@@ -404,8 +424,6 @@ body {
 					<div id="tb" class="collapse">
 						<span class="glyphicon glyphicon glyphicon-star"> <b id="mthint">Introduction</b></span><br> 
 						<span class="glyphicon glyphicon glyphicon-star">
-							<b id="crth">How to Create a Thread</b>
-						</span><br> <span class="glyphicon glyphicon glyphicon-star">
 							<b id="gtstnmth">Getting and Setting name Of Thread</b>
 						</span><br> <span class="glyphicon glyphicon glyphicon-star">
 							<b id="thp">Thread Priorities</b>
